@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <title>eDiscussion - Real Time Chat App</title>
+  </head>
+  <body>
+    <nav class="navBar">
+      <h1>Chat With eDiscussion</h1>
+    </nav>
+    <div class="container"></div>
+    <div class="sendMsg">
+      <form class="sendMsgForm" id="sendMsgForm">
+        <input
+          type="text"
+          class="msgInput"
+          id="msgInput"
+          placeholder="Write a Message..."
+        />
+        <button id="sendBtn" class="sendBtn" type="submit">
+          Send
+          <i class="fa fa-send-o"></i>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
